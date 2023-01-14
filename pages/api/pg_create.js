@@ -7,6 +7,7 @@ export default async (req, res) => {
             query
         );
         console.log( "ttt",result );
+        res.status(200).json({ res: 'done' })
     } catch ( error ) {
         console.log( error );
     }  
